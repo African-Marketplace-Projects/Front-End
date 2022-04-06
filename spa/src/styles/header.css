@@ -1,0 +1,23 @@
+.header-navs {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 1em;
+    background: rgb(44,48,60);
+    background: linear-gradient(90deg, rgba(44,48,60,1) 0%, rgba(38,73,147,1) 35%, rgba(0,215,255,1) 100%);
+}
+
+nav a {
+	color: white;
+	background-color: darkslategrey;
+	padding: 0.8rem;
+	margin: 0.8rem;
+	text-decoration: none;
+	transition: all 0.8s ease-out;
+	border-radius: 0.8rem;
+}
+nav a:hover,
+a:focus {
+	background-color: #fff;
+	color: #333;
+	border-radius: 0.8rem;
+}
