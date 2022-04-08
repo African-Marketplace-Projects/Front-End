@@ -7,7 +7,7 @@ export const itemInitialValues = {
     location: '',
 }
 
-export const addItemFormErrors = {
+export const initialAddItemErrors = {
     itemName: '',
     itemPrice: '',
     itemDescription: '',

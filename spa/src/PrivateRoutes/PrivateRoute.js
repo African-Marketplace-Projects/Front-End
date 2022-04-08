@@ -23,7 +23,7 @@ export const ProfilePagePrivateRoute = () => {
     }
 }
 
-export const LogoutPrivateRoute = ({children}) => {
+export const LogoutPrivateRoute = ({children, ...rest}) => {
     const token = localStorage.getItem("token");
 
     return token ? children  : <Navigate to="/login" />;

@@ -1,5 +1,8 @@
-.login-container {
-    background-color: #282c34;
+/* styles for login and sign-up page */
+
+.input-container {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     min-height: 50vh;
     display: flex;
     flex-direction: column;
@@ -7,4 +10,4 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;      
-}
+  }

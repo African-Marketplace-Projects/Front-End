@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
     itemInitialValues,
-    addItemFormErrors,
+    initialAddItemErrors,
 } from '../initialValues/initialValues.js'
 
 
 function AddItem(){
     const [values, setValues] = useState(itemInitialValues)
-    const [formErrors, setFormErrors] = useState(addItemFormErrors)
+    const [addItemErrors, setAddItemErrors] = useState(initialAddItemErrors)
+    
 
     const addNewItem = (newItem) => {
         axios.post('', newItem)
@@ -43,16 +44,16 @@ function AddItem(){
             <div className='add-item-form'>
                 <div className='add-item-errors'>
                     <div>
-                        <p>{addItemFormErrors.itemName}</p>
+                        <p>{addItemErrors.itemName}</p>
                     </div>
                     <div>
-                        <p>{addItemFormErrors.itemDescription}</p>
+                        <p>{addItemErrors.itemDescription}</p>
                     </div>
                     <div>
-                        <p>{addItemFormErrors.itemPrice}</p>
+                        <p>{addItemErrors.itemPrice}</p>
                     </div>
                     <div>
-                        <p>{addItemFormErrors.location}</p>
+                        <p>{addItemErrors.location}</p>
                     </div>
                 </div>
                 <form className='add-form' onSubmit={onSubmit}>

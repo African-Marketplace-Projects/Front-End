@@ -26,7 +26,7 @@ function SignUp(){
 
     const onChange = (event) => {
         const { name, value } = event.target;
-
+        console.log(event.target)
         setValues({
             ...values,
             [name]: value
@@ -39,7 +39,7 @@ function SignUp(){
     }
 
     return(
-       <div className='sign-up'>
+       <div className='signup-container'>
            <div>
                <h3>Sign Up here!</h3>
            </div>

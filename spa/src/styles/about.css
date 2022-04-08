@@ -1,5 +1,6 @@
 .about-us-card {
-    background-color: #282c34;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     min-height: 50vh;
     display: flex;
     flex-direction: column;
@@ -8,16 +9,21 @@
     font-size: calc(10px + 2vmin);
     color: white;
   }
-
+  
+  .about-us-picture {
+  min-height: 50vh;
+  }
+  
   label {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  
   button {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+  
