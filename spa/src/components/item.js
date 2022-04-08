@@ -10,6 +10,7 @@ function Item(props){
             <p>{product.itemName}</p>
             <p>{product.itemDescription}</p>
             <p>{product.itemPrice}</p>
+            <p>{product.location}</p>
         </div>
     )
 }
