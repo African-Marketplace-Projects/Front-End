@@ -7,10 +7,10 @@ function Item(props){
 
     return(
         <div className='product-info'>
-            <p>{product.itemName}</p>
-            <p>{product.itemDescription}</p>
-            <p>{product.itemPrice}</p>
-            <p>{product.location}</p>
+            <p>{product.item_name}</p>
+            <p>{product.item_price}</p>
+            <p>{product.item_description}</p>
+            <p>{product.item_location}</p>
         </div>
     )
 }

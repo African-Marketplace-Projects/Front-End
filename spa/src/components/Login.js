@@ -11,7 +11,7 @@ function Login(){
     const setToken = () => localStorage.setItem('token', 'token');
 
     const login = (credentials) => {
-        axios.post('', credentials)
+        axios.post('https://african-market-web-api.herokuapp.com/api/auth/login', credentials)
         .then((res) => {
             const token = res.data.token;
             localStorage.setItem('token', token);

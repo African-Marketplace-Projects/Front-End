@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import { Route, Routes, NavLink } from 'react-router-dom';
-import axiosWithAuth from '../authorization/axiosWithAuth';
+import axios from 'axios';
+
 import { apples } from '../mock-data/item';
 import Item from './item';
 import AddItem from './AddItem';
 import '../styles/items.css'
 
 
-function items(){
+function Items(){
 const [products, setProducts] = useState(apples)
 
 const fetchProducts = () => {
-    axiosWithAuth().get('')
+    axios.get('https://african-market-web-api.herokuapp.com/api/items')
     .then((res) => {
-        const products = res.data 
-        setProducts(products)
+        console.log(res.data)
+        setProducts(res.data)
     })
     .catch((err) => {
         console.error(err)
@@ -35,9 +36,9 @@ const fetchProducts = () => {
                     <Item key={i} product={product}/> 
                 )
             })}
-
+        <button onClick={fetchProducts}>get products</button>
         </div>
     )
 }
 
-export default items;
+export default Items;
